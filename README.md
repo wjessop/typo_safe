@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-I'm pretty sure you don't ever want to use this gem, not even in development.
+I'm pretty sure you don't ever want to use this gem, not even in development. That said, should you decide that this code is for you you can use it as follows:
 
 ### Typo Safe a single class written by a fat-fingered developer:
 
