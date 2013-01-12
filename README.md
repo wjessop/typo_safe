@@ -45,7 +45,7 @@ SomeClass.new.pring_goodbye
 
 A discussion in Campfire:
 
-![Alt text](http://i.imgur.com/oHTdT.png)
+![Alt text](http://i.imgur.com/WoPqv.png)
 
 ## Contributing
 
