@@ -20,7 +20,7 @@ Or install it yourself as:
 
 I'm pretty sure you don't ever want to use this gem, not even in development.
 
-# Typo Safe a single class written by a fat-fingered developer:
+### Typo Safe a single class written by a fat-fingered developer:
 
 ```ruby
 require 'typo_safe'
