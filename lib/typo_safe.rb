@@ -6,7 +6,7 @@ module TypoSafe
 
 	def method_missing(requested_method, *args, &block)
 		distances = []
-		methods.select{ |m|
+		public_methods.select{ |m|
 			a = method(m).arity
 			(a >= 0 && a == args.size) || (a < 0 && (0 - a - 1) <= args.size)
 		}.each { |meth|
@@ -19,9 +19,9 @@ module TypoSafe
 		else
 			closest_match = distances.sort_by{|dist| dist[:dist]}.first
 			if block_given?
-				send(closest_match[:meth], *args, &block)
+				public_send(closest_match[:meth], *args, &block)
 			else
-				send(closest_match[:meth], *args)
+				public_send(closest_match[:meth], *args)
 			end
 		end
 	end
