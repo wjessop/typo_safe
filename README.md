@@ -62,3 +62,7 @@ A discussion in Campfire:
 * Benchmark Levenshtein calculations and possibly cache
 * At the moment when there is a conflict (two methods have the same Levenshtein distance) the first is picked, maybe favour locally defined methods over inherited methods
 * Make including TypoSafe on Object work (for global protection!)
+
+## Authors
+
+* Will Jessop (will@willj.net)
