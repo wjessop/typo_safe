@@ -16,8 +16,8 @@ class TestTypoSafe < MiniTest::Unit::TestCase
 			# Methods for test_ignores_methods_that_are_not_arg_or_block_campatible
 			def arity_test_aaaaaaa(arg, other_arg); "aaaaaaa"; end
 			def arity_test_aaaaaab(arg); "aaaaaab"; end
-      private
-      def secret; "secret"; end
+			private
+			def secret; "secret"; end
 		end.new
 	end
 
@@ -54,8 +54,8 @@ class TestTypoSafe < MiniTest::Unit::TestCase
 		assert_equal @foo.arity_test_aaaaaax(1), "aaaaaab"
 	end
 
-  def test_ignores_private_methods
-    assert_raises(NoMethodError) { @foo.secret }
-    assert_raises(NoMethodError) { @foo.sekrit }
-  end
+	def test_ignores_private_methods
+		assert_raises(NoMethodError) { @foo.secret }
+		assert_raises(NoMethodError) { @foo.sekrit }
+	end
 end
